@@ -4,12 +4,12 @@
   <title>I'm Nathan Miranda</title>
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link href="styles/index.css" rel="stylesheet">
+  <link href="styles/header.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
 
   <!-- HOSTED -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800'
     rel='stylesheet' type='text/css'>
-  <link href="fonts/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" />
 
   <!-- LOCAL -->
   <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
@@ -23,10 +23,55 @@
   <!-- LOCAL -->
   <script src="scripts/pt.min.js"></script>
   <script src="scripts/index.js"></script>
+  <script src="scripts/animations.js"></script>
 
 </head>
 
 <body>
+  <header id="header" class="header">
+    <nav class="top-nav">
+      <a href="/" class="logo"></a>
+      <div class="links">
+        <a href="https://mirandamon.github.io/about/">
+          <span>About</span>
+          <span>About</span>
+        </a>
+      </div>
+      <div class="links">
+        <a href="https://mirandamon.github.io/contact/">
+          <span>Contact</span>
+          <span>Contact</span>
+        </a>
+      </div>
+    </nav>
+    <h1>Hello my name is Nathan Miranda</h1>
+    <div class="container">
+      <div id="/about/" class="page">
+        <div class="content">
+          <p>I am a Software Engineer based in NYC, but born and raised in North Carolina.</p>
+          <p>I love writing React, Redux, TypeScript and GraphQL but I also enjoy Python and Java &amp; have a passion for learning
+            new things. On the weekends, you'll find me in the practice room playing piano or saxophone.</p>
+        </div>
+      </div>
+      <div id="/contact/" class="page">
+        <div class="content">
+          <p>There's plenty of ways to get in touch with me. Connect with me on LinkedIn or send me one of those newfangled
+            emails.
+          </p>
+          <div class="contact-buttons">
+            <a class="contact-button linkedin" href="https://www.linkedin.com/in/namiranda">
+              <span>i</span>
+              <span>i</span>
+            </a>
+            <a class="contact-button email" href="mailto:nate845@gmail.com">
+              <span>e</span>
+              <span>e</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
   <section id="home" class="home-text-container height-fix">
     <div id="pt" class="canvas"></div>
     <div class="home-text-container">
@@ -37,17 +82,6 @@
       </div>
 
       <div class="button page-link " dest="about">View my work</div>
-
-      <nav class="home-text-container">
-        <div class="link-wrap">
-          <div class="active page-link" dest="home">home</div>
-          <div class="page-link" dest="about">about</div>
-          <div class="page-link" dest="portfolio">portfolio</div>
-          <div class="page-link" dest="blog">blog</div>
-          <div class="page-link" dest="contact">contact</div>
-        </div>
-        <i class="mdi mdi-menu"></i>
-      </nav>
     </div>
 
   </section>
