@@ -1049,7 +1049,7 @@ textarea {
   display: block;
   min-height: 460px;
   position: relative;
-  top: 52px;
+  top: 0;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
   width: 100%;
