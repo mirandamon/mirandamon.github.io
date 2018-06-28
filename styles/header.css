@@ -217,7 +217,7 @@ body:after {
 .site.black {
   background: #181818;
 }
-.mm.home .site,
+.portfolio.home .site,
 .home .site {
   background: #fff;
 }
@@ -655,10 +655,10 @@ body:after {
 .touch .top-nav .links a.selected:hover span {
   padding-top: 16px;
 }
-.mm .top-nav .links a.selected {
+.portfolio .top-nav .links a.selected {
   border-bottom: 1px solid #16528e;
 }
-.mm .top-nav .links span:first-child {
+.portfolio .top-nav .links span:first-child {
   color: #16528e;
 }
 .top-nav .logo {
@@ -699,7 +699,7 @@ body:after {
   -webkit-transform: rotate(270deg);
   transform: rotate(270deg);
 }
-.mm .top-nav .logo {
+.portfolio .top-nav .logo {
   border: none;
   border-radius: 0;
   height: 24px;
@@ -710,15 +710,15 @@ body:after {
   transition: color 0.3s;
   width: 24px;
 }
-.mm .top-nav .logo:after {
+.portfolio .top-nav .logo:after {
   background: 0 0;
   content: 'm';
   left: 0;
   position: absolute;
   top: 0;
 }
-.mm .top-nav .logo:hover,
-.mm .top-nav .logo.bounce {
+.portfolio .top-nav .logo:hover,
+.portfolio .top-nav .logo.bounce {
   -webkit-animation: logo-jump 0.5s 1;
   animation: logo-jump 0.5s 1;
   -webkit-transform: none;
@@ -731,7 +731,7 @@ body:after {
 .lab .top-nav .logo:after {
   background: #fff;
 }
-.lab.mm .top-nav .logo:after {
+.lab.portfolio .top-nav .logo:after {
   background: 0 0;
 }
 .lab .top-nav .links a.selected {
@@ -740,31 +740,31 @@ body:after {
 .lab .top-nav .links span:first-child {
   color: #fff;
 }
-.mm.single-post .arrow.decolor .color {
+.portfolio.single-post .arrow.decolor .color {
   background: #888;
 }
-.mm.single-post .arrow.offblack .color {
+.portfolio.single-post .arrow.offblack .color {
   background: #181818;
 }
-.mm.single-post .arrow.orange .color {
+.portfolio.single-post .arrow.orange .color {
   background: #e8846b;
 }
-.mm.single-post .arrow.navy .color {
+.portfolio.single-post .arrow.navy .color {
   background: #16528e;
 }
-.mm.single-post .arrow.red .color {
+.portfolio.single-post .arrow.red .color {
   background: #e54b4b;
 }
-.mm.single-post .arrow.lime .color {
+.portfolio.single-post .arrow.lime .color {
   background: #a2c5bf;
 }
-.mm.single-post .arrow.green .color {
+.portfolio.single-post .arrow.green .color {
   background: #167c80;
 }
-.mm.single-post .arrow.blue .color {
+.portfolio.single-post .arrow.blue .color {
   background: #0082c8;
 }
-.mm.single-post .arrow.purple .color {
+.portfolio.single-post .arrow.purple .color {
   background: #72616e;
 }
 .comments {
@@ -981,7 +981,7 @@ textarea {
   line-height: 25px;
   margin: 15px 0 25px;
 }
-.mm .header h1 {
+.portfolio .header h1 {
   color: #e54b4b;
 }
 .header .container {
@@ -1037,7 +1037,7 @@ textarea {
 .lab .header .container {
   color: #999;
 }
-.lab.mm .header h1 {
+.lab.portfolio .header h1 {
   color: #e54b4b;
 }
 .lab.showheader .header,
@@ -1236,31 +1236,31 @@ textarea {
   padding: 44px 38px 68px;
 }
 .decolor,
-.mm .decolor {
+.portfolio .decolor {
   background: #888;
 }
-.mm .offblack {
+.portfolio .offblack {
   background: #181818;
 }
-.mm .orange {
+.portfolio .orange {
   background: #e8846b;
 }
-.mm .navy {
+.portfolio .navy {
   background: #16528e;
 }
-.mm .red {
+.portfolio .red {
   background: #e54b4b;
 }
-.mm .lime {
+.portfolio .lime {
   background: #a2c5bf;
 }
-.mm .green {
+.portfolio .green {
   background: #167c80;
 }
-.mm .blue {
+.portfolio .blue {
   background: #0082c8;
 }
-.mm .purple {
+.portfolio .purple {
   background: #72616e;
 }
 .article {
@@ -1549,7 +1549,7 @@ textarea {
     -webkit-transform: rotate(0);
     transform: rotate(0);
   }
-  .mm.intro-transition .site:after {
+  .portfolio.intro-transition .site:after {
     color: #eee;
     content: 'M';
     font-size: 100px;
@@ -1560,7 +1560,7 @@ textarea {
     width: 110px;
   }
 
-  .mm.single-post .arrow {
+  .portfolio.single-post .arrow {
     background: 0 0;
   }
   .single-post .arrow {
@@ -1735,67 +1735,67 @@ textarea {
     -webkit-transform: scaleX(1.15625) translate3d(0, 0, 0);
     transform: scaleX(1.15625) translate3d(0, 0, 0);
   }
-  .mm .hover .decolor {
+  .portfolio .hover .decolor {
     background-color: #373737;
   }
-  .mm .hover .decolor:hover,
-  .mm .hover .decolor.selected {
+  .portfolio .hover .decolor:hover,
+  .portfolio .hover .decolor.selected {
     background-color: #888;
   }
-  .mm .hover .offblack {
+  .portfolio .hover .offblack {
     background-color: #090909;
   }
-  .mm .hover .offblack:hover,
-  .mm .hover .offblack.selected {
+  .portfolio .hover .offblack:hover,
+  .portfolio .hover .offblack.selected {
     background-color: #181818;
   }
-  .mm .hover .orange {
+  .portfolio .hover .orange {
     background-color: #5d352b;
   }
-  .mm .hover .orange:hover,
-  .mm .hover .orange.selected {
+  .portfolio .hover .orange:hover,
+  .portfolio .hover .orange.selected {
     background-color: #e8846b;
   }
-  .mm .hover .navy {
+  .portfolio .hover .navy {
     background-color: #082139;
   }
-  .mm .hover .navy:hover,
-  .mm .hover .navy.selected {
+  .portfolio .hover .navy:hover,
+  .portfolio .hover .navy.selected {
     background-color: #16528e;
   }
-  .mm .hover .red {
+  .portfolio .hover .red {
     background-color: #5c1e1e;
   }
-  .mm .hover .red:hover,
-  .mm .hover .red.selected {
+  .portfolio .hover .red:hover,
+  .portfolio .hover .red.selected {
     background-color: #e54b4b;
   }
-  .mm .hover .lime {
+  .portfolio .hover .lime {
     background-color: #414f4d;
   }
-  .mm .hover .lime:hover,
-  .mm .hover .lime.selected {
+  .portfolio .hover .lime:hover,
+  .portfolio .hover .lime.selected {
     background-color: #a2c5bf;
   }
-  .mm .hover .green {
+  .portfolio .hover .green {
     background-color: #083233;
   }
-  .mm .hover .green:hover,
-  .mm .hover .green.selected {
+  .portfolio .hover .green:hover,
+  .portfolio .hover .green.selected {
     background-color: #167c80;
   }
-  .mm .hover .blue {
+  .portfolio .hover .blue {
     background-color: #003451;
   }
-  .mm .hover .blue:hover,
-  .mm .hover .blue.selected {
+  .portfolio .hover .blue:hover,
+  .portfolio .hover .blue.selected {
     background-color: #0082c8;
   }
-  .mm .hover .purple {
+  .portfolio .hover .purple {
     background-color: #2e272c;
   }
-  .mm .hover .purple:hover,
-  .mm .hover .purple.selected {
+  .portfolio .hover .purple:hover,
+  .portfolio .hover .purple.selected {
     background-color: #72616e;
   }
   .article {
