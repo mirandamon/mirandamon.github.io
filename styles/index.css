@@ -112,16 +112,9 @@ html {
   font-style: normal;
   font-weight: 400;
   color: #fff;
-  text-align: center;
   margin: 0px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 #preload {
@@ -140,7 +133,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   background: url('../img/filler.png') center center/cover;
 }
@@ -250,16 +243,6 @@ section:nth-of-type(1) .button:hover .mdi {
   .hex-wrap {
     height: 100px;
     width: 100px;
-  }
-
-  .slide,
-  .carousel-wrap {
-    height: 450px;
-  }
-
-  .mdi-chevron-left,
-  .mdi-chevron-right {
-    font-size: 25pt !important;
   }
 
   .modal-wrap .modal {

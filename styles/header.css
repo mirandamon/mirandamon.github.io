@@ -208,6 +208,7 @@ body:after {
   transition: background-color 0.3s ease-in-out 0.05s, margin 0s linear 0.3s,
     transform 0.3s, top 0.3s;
   z-index: 2;
+  overflow: auto;
 }
 .site.no-bg-transition {
   -webkit-transition: margin 0 linear 0.3s, -webkit-transform 0.3s, top 0.3s;
