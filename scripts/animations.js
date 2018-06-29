@@ -8826,7 +8826,7 @@ define("requireLib", function () {}),
           this
             .model
             .on("change:previousArticle", this.onPreviousUpdated);
-          var d = c.cleanUrl(this.$next[0].href);
+          var d = this.$next[0] && c.cleanUrl(this.$next[0].href);
           this
             .model
             .set("nextArticle", d === Backbone.history.fragment
@@ -8862,7 +8862,7 @@ define("requireLib", function () {}),
               e.resolve(f)
             }, this)), this.model.loadArticle(a))
             : (c.removeClass(d).addClass(f.color), e.resolve(f.color)),
-          c[0].href = "/" + a,
+          c[0].href = a.indexOf('http') > -1 ? a : "/" + a,
           c.removeClass("hide"),
           e.promise()
         },
