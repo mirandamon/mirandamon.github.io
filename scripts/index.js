@@ -47,23 +47,6 @@ $(function () {
       lastPos = pos;
     }
 
-    // Link Highlighting
-    if (pos2 > $('#home').offset().top) {
-      highlightLink('home');
-    }
-    if (pos2 > $('#about').offset().top) {
-      highlightLink('about');
-    }
-    if (pos2 > $('#portfolio').offset().top) {
-      highlightLink('portfolio');
-    }
-    if (pos2 > $('#blog').offset().top) {
-      highlightLink('blog');
-    }
-    if (pos2 > $('#contact').offset().top || pos + $(window).height() === $(document).height()) {
-      highlightLink('contact');
-    }
-
     // Prevent Hover on Scroll
     clearTimeout(lockTimer);
     if (!$('body').hasClass('disable-hover')) {
@@ -75,30 +58,22 @@ $(function () {
     }, 500);
   });
 
-  function highlightLink(anchor) {
-    $('nav .active').removeClass('active');
+  // EVENT HANDLERS
+  $('.page-link').click(function () {
+    var anchor = $(this).attr("dest");
+    $('.link-wrap').removeClass('visible');
+
+    $('nav span').removeClass('active');
     $("nav")
       .find('[dest="' + anchor + '"]')
       .addClass('active');
-  }
 
-  // EVENT HANDLERS
-  $('.page-link')
-    .click(function () {
-      var anchor = $(this).attr("dest");
-      $('.link-wrap').removeClass('visible');
-
-      $('nav span').removeClass('active');
-      $("nav")
-        .find('[dest="' + anchor + '"]')
-        .addClass('active');
-
-      $('html, body').animate({
-        scrollTop: $('#' + anchor)
-          .offset()
-          .top
-      }, 400);
-    });
+    $('html, body').animate({
+      scrollTop: $('#' + anchor)
+        .offset()
+        .top
+    }, 400);
+  });
 
   $('.mdi-menu').click(function () {
     $('.link-wrap').toggleClass('visible');

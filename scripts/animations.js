@@ -7519,6 +7519,10 @@ define("requireLib", function () {}),
       })
     },
     navigate: function (a, b) {
+      if (a.indexOf('http') > -1) {
+        window.location.href = a
+        return false
+      }
       if (!C.started) 
         return !1;
       b && b !== !0 || (b = {
